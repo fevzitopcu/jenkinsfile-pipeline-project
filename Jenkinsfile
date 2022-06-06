@@ -13,5 +13,11 @@ pipeline {
                 sh 'echo WWWWWWWWWWWWWWWWWWWWWWXXXXXXXXXXXXXXX Jenkinsfile'
             }
         }
+		stage('done') {
+            steps {
+                echo 'Done the code'
+                sh 'echo DONE'
+            }
+        }        
     }
 }
