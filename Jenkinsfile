@@ -7,17 +7,11 @@ pipeline {
                 sh 'echo Integrating Jenkins Pipeline with GitHub Webhook using Jenkinsfile'
             }
         }
-		stage('run') {
+        stage('run') {
             steps {
-                echo 'Run the code'
-                sh 'echo WWWWWWWWWWWWWWWWWWWWWWXXXXXXXXXXXXXXX Jenkinsfile'
-            }
-        }
-		stage('done') {
-            steps {
-                echo 'Done the code'
-                sh 'echo DONE'
-            }
-        }        
+                echo 'Clarusway_Way to Reinvent Yourself'
+                sh 'python --version'
+                sh 'python pipeline.py'
+            }    
     }
 }
